@@ -5,6 +5,7 @@ This project aims to develop a machine learning model for detecting fraudulent c
 
 Dataset
   Source: The dataset used is a publicly available credit card transaction dataset.
+  
   https://www.kaggle.com/datasets/kartik2112/fraud-detection
 
   Features:
@@ -52,3 +53,5 @@ Future Enhancements
   Hyperparameter Tuning: Use GridSearchCV or RandomizedSearchCV to optimize model parameters.
   Feature Engineering: Explore additional features such as transaction frequency or location-based features.
   Real-time Deployment: Integrate the model into a real-time transaction processing system.
+
+  
