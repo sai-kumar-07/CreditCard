@@ -1,57 +1,80 @@
-# CreditCard
-Fraud Detection
+## CreditCard Fraud Detection
 
-This project aims to develop a machine learning model for detecting fraudulent credit card transactions. The model uses a dataset containing transaction details and employs techniques such as SMOTE to handle class imbalance.
+Welcome to the **CreditCard Fraud Detection** project! This project aims to develop a robust machine learning model to detect fraudulent credit card transactions. By using advanced techniques such as **SMOTE** for handling class imbalance, we strive to build an efficient and accurate model.
 
-Dataset
-  Source: The dataset used is a publicly available credit card transaction dataset.
+---
+
+### Dataset
+
+The dataset used for this project is publicly available and can be accessed via Kaggle. It contains transaction details and labels each transaction as legitimate or fraudulent.
+
+- **Source:** [Kaggle Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
   
-  https://www.kaggle.com/datasets/kartik2112/fraud-detection
+- **Features:**
+  - `Time`: Time of the transaction
+  - `V1` to `V28`: Transaction features (anonymized)
+  - `Amount`: The monetary value of the transaction
+  - `Class`: 
+    - `0`: Legitimate transaction
+    - `1`: Fraudulent transaction
 
-  Features:
-      Time
-      V1 to V28 (transaction features)
-      Amount
-      Class (0 for legitimate, 1 for fraudulent)
+- **Size:** ~284,807 transactions
 
-Size: Approximately 284,807 transactions.
+---
 
-Requirements
-  Python: 3.8+
-  Libraries:
-    numpy
-    pandas
-    matplotlib
-    seaborn
-    scikit-learn
-    imbalanced-learn
+### Requirements
 
-Installation
-  To install the required libraries, run:
+To run this project, ensure you have the following:
 
-  bash
-  pip install numpy pandas matplotlib seaborn scikit-learn imbalanced-learn
+- **Python version:** 3.8+
+- **Required Libraries:**
+  - `numpy`
+  - `pandas`
+  - `matplotlib`
+  - `seaborn`
+  - `scikit-learn`
+  - `imbalanced-learn`
 
-Usage
-  Clone the repository.
+---
 
-Update the file_path variable in the code to point to your dataset location.
+### Installation
 
-Run the script to train and evaluate the model.
+To install the necessary libraries, use the following command:
 
-Model Details
-  Model: Random Forest Classifier
-  
-  Balancing Technique: SMOTE (Synthetic Minority Over-sampling Technique)
-  
-  Evaluation Metrics: Accuracy, Precision, Recall, F1-score, AUC-ROC
+```bash
+pip install numpy pandas matplotlib seaborn scikit-learn imbalanced-learn
+```
 
-Performance
-The model's performance is evaluated based on its ability to detect fraudulent transactions accurately while minimizing false positives.
+### Usage
+Clone the repository:
 
-Future Enhancements
-  Hyperparameter Tuning: Use GridSearchCV or RandomizedSearchCV to optimize model parameters.
-  Feature Engineering: Explore additional features such as transaction frequency or location-based features.
-  Real-time Deployment: Integrate the model into a real-time transaction processing system.
 
-  
+```
+git clone <repository_url>
+```
+```
+cd <project_directory>
+```
+Update Dataset Path:
+
+In the code, update the file_path variable to the location where your dataset is stored.
+
+Run the Script:
+
+Execute the script to train and evaluate the machine learning model.
+
+### Model Details
+Model: Random Forest Classifier
+Balancing Technique: SMOTE (Synthetic Minority Over-sampling Technique), UnderSampling, OverSampling
+
+Evaluation Metrics:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-score
+  - AUC-ROC
+
+### Future Enhancements
+- Hyperparameter Tuning: Optimize model performance using GridSearchCV or RandomizedSearchCV.
+- Feature Engineering: Investigate additional features like transaction frequency, or location-based data.
+- Real-time Deployment: Aim for real-time transaction monitoring and fraud detection integration.
